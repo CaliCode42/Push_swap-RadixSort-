@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 22:02:06 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/21 16:07:36 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/24 16:21:32 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ typedef struct s_content
 {
 	int			nb;
 	int			index;
+	int			order;
 }				t_content;
 
 typedef struct s_list

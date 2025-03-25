@@ -10,10 +10,11 @@ INCLUDES = includes
 #Source files
 SRC_FILES = \
 	$(SRC_DIR)/errors.c \
-	$(SRC_DIR)/find_median.c \
 	$(SRC_DIR)/main.c \
 	$(SRC_DIR)/nodes_management.c \
 	$(SRC_DIR)/stdin_to_str.c \
+	$(SRC_DIR)/identify_order.c \
+	$(SRC_DIR)/find_max_bits.c \
 	$(SRC_DIR)/test.c \
 	$(OPS_DIR)/swap.c \
 	$(OPS_DIR)/push.c \
@@ -23,7 +24,7 @@ SRC_FILES = \
 	$(SORT_DIR)/find_min_lst.c \
 	$(SORT_DIR)/find_max_lst.c \
 	$(SORT_DIR)/mini_sort.c \
-	$(SORT_DIR)/quicksort.c \
+	$(SORT_DIR)/radix_sort.c \
 
 #B_SOURCES = \ >>to complete
 

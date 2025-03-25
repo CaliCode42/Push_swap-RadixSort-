@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 16:51:41 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/24 14:19:14 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/24 17:07:29 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ void	print_nodes_linkedlst(t_list *head)
 	printf("Forward list:\n");
 	while (head)
 	{
-		printf("node (%d) : [%d] | stack: %c ---> ", head->content.index,
-			head->content.nb, head->stack);
+		printf("node (%d) : [%d] | order: %d ---> ", head->content.index,
+			head->content.nb, head->content.order);
 		head = head->next;
 	}
 	printf("NULL\n");

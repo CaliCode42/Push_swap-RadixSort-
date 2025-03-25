@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   nodes_management.c                                 :+:      :+:    :+:   */
+/*   find_max_bits.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/11 16:53:10 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/24 17:12:26 by tcali            ###   ########.fr       */
+/*   Created: 2025/03/24 16:48:24 by tcali             #+#    #+#             */
+/*   Updated: 2025/03/24 16:59:50 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Push_swap.h"
 #include <stdio.h>
 
-//create new node and add it at the end of the linked list.
-t_list	*create_add_node(t_list **list, char *number, int index, char c)
+//fct to find the nb of bits of the index (list->content.order)
+//of the biggest nb.
+//Because radix sorts the nb by their representation in bits.
+int	find_max_bits(t_list *list)
 {
-	t_list		*new_node;
-	t_content	current;
+	int	max;
+	int	bits;
 
-	if (!list || !number)
-		return (NULL);
-	current.nb = ft_atoi(number);
-	current.index = index;
-	current.order = -1;
-	new_node = ft_lstnew(current);
-	if (!new_node)
-		return (NULL);
-	new_node->stack = c;
-	ft_lstadd_back(list, new_node);
-	return (new_node);
+	max = 0;
+	while (list)
+	{
+		if (list->content.index > max)
+			max = list->content.index;
+		list = list->next;
+	}
+	bits = 0;
+	while ((max >> bits) != 0)
+		bits++;
+	return (bits);
 }

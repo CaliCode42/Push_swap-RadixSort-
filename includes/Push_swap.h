@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 12:36:51 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/24 15:59:57 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 13:47:00 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@
 void	init_list(t_list *list, char c);
 void	ft_sort_stack(t_list **a);
 int		get_stack_size(char **stack);
+void	identify_order(t_list **list);
+int		find_max_bits(t_list *list);
 //Read from standard input
 void	split_to_nodes(t_list **list, char **stack);
 char	*stdin_to_str(int arg_nb, char **args);
@@ -48,12 +50,14 @@ void	reverse_rotate_both(t_list **a, t_list **b);
 int		is_sorted(t_list *list);
 int		is_rev_sorted(t_list *list);
 t_list	*find_min_lst(t_list **list);
+t_list	*find_next_min(t_list **list, int nb);
 t_list	*find_max_lst(t_list **list);
 void	mini_sort(t_list **src, t_list **dst);
 void	micro_sort(t_list **list);
 void	sort_three(t_list **list);
 void	sort_four(t_list **a, t_list **b);
 void	sort_five(t_list **a, t_list **b);
+void	radix_sort(t_list **a, t_list **b);
 
 //Testers
 void	print_nodes_linkedlst(t_list *head);

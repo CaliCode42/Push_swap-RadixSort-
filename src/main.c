@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 16:59:40 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/25 14:18:46 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 20:43:38 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,12 @@ void	ft_sort_stack(t_list **a)
 	if (!*a || !a)
 		return ;
 	if (!is_sorted(*a))
-		radix_sort(a, &b);
+	{
+		if (ft_lstsize(*a) <= 5)
+			mini_sort(a, &b);
+		else
+			radix_sort(a, &b);
+	}
 	if (is_sorted(*a) && !b)
 	{
 		printf("stack a IS sorted.\n");
@@ -94,10 +99,10 @@ int	main(int ac, char **av)
 
 	stack = parse_input(ac, av);
 	if (stack == NULL)
-		return (printf("Error\n"), 1);
+		return (ft_printf("Error\n"), 1);
 	stack_size = get_stack_size(stack);
 	if (!stack || check_stack_errors(stack, stack_size) == 0)
-		return (printf("Error\n"), 1);
+		return (ft_printf("Error\n"), 1);
 	a = NULL;
 	i = 0;
 	split_to_nodes(&a, stack);

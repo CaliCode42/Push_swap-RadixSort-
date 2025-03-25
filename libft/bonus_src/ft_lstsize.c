@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 16:43:33 by tcali             #+#    #+#             */
-/*   Updated: 2024/11/28 14:18:42 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:37:24 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ lst: The beginning of the list.
 
 Counts the number of nodes in a list.
 */
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	ft_lstsize(t_list *lst)
 {

@@ -6,13 +6,13 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 17:02:21 by tcali             #+#    #+#             */
-/*   Updated: 2024/11/28 12:38:40 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:39:43 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_empty_str(void)
 {

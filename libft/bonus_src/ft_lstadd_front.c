@@ -6,11 +6,11 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 16:23:14 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/11 15:22:12 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:36:49 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 void	ft_lstadd_front(t_list **lst, t_list *new)
 {

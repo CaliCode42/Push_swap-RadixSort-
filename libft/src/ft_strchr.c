@@ -6,12 +6,12 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 15:32:41 by tcali             #+#    #+#             */
-/*   Updated: 2024/11/29 17:25:05 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:38:49 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*Segmentation fault with null parameter, must give a valid string.*/
-#include "libft.h"
+#include "../includes/libft.h"
 #include <unistd.h>
 
 char	*ft_strchr(const char *s, int c)

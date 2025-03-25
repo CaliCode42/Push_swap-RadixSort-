@@ -66,6 +66,8 @@
 	"utility": "c",
 	"push_swap.h": "c",
 	"libft.h": "c",
-	"ft_printf.h": "c"
+	"ft_printf.h": "c",
+	"stdio.h": "c",
+	"unistd.h": "c"
 }
 }

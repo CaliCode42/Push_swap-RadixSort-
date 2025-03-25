@@ -6,13 +6,13 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 16:50:13 by tcali             #+#    #+#             */
-/*   Updated: 2024/11/29 17:30:34 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:39:01 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*Segmentation fault with null parameter, must give a valid string.*/
 #include <stdlib.h>
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strdup(const char *source)
 {

@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 17:46:35 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/07 14:13:54 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:36:58 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ content using the function ’del’ given as a parameter and free
 the node. The memory of ’next’ must not be freed.
 */
 #include <stdlib.h>
-#include "libft.h"
+#include "../includes/libft.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(t_content))
 {

@@ -6,11 +6,11 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 20:43:06 by tcali             #+#    #+#             */
-/*   Updated: 2024/11/20 23:29:56 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:38:41 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
 {

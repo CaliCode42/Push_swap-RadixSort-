@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 17:32:37 by tcali             #+#    #+#             */
-/*   Updated: 2024/11/25 12:37:51 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:39:26 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ results from the successive applications of f.*/
 
 #include <stdlib.h>
 #include <unistd.h>
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

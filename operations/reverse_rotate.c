@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 23:31:16 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/21 16:31:04 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/26 00:07:59 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ void	reverse_rotate(t_list **list)
 {
 	reverse_rotate_list(list);
 	if ((*list)->stack == 'a')
-		write(1, "ra\n", 3);
+		write(1, "rra\n", 4);
 	if ((*list)->stack == 'b')
-		write(1, "rb\n", 3);
+		write(1, "rrb\n", 4);
 }
 
 void	reverse_rotate_both(t_list **a, t_list **b)

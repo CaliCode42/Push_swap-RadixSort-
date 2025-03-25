@@ -6,13 +6,13 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 16:36:22 by tcali             #+#    #+#             */
-/*   Updated: 2024/11/25 18:53:17 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:38:15 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	ft_nb_len(long nb)
 {

@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/24 16:49:47 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/25 14:04:29 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/26 00:04:08 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,11 +31,11 @@ void	radix_sort(t_list **a, t_list **b)
 			if (((*a)->content.order >> i) & 1)
 				rotate(a);
 			else
-				push_a(a, b);
+				push_b(a, b);
 			j++;
 		}
 		while (*b)
-			push_b(b, a);
+			push_a(b, a);
 		i++;
 	}
 }

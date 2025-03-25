@@ -6,12 +6,12 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 15:54:24 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/11 12:49:59 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:36:40 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
+#include "../includes/libft.h"
 
 t_list	*ft_lstnew(t_content content)
 {

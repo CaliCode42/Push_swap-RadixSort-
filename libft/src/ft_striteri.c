@@ -6,14 +6,14 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/18 17:47:18 by tcali             #+#    #+#             */
-/*   Updated: 2024/11/25 09:41:11 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:39:04 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*the string passed as argument, passing its index
 as first argument. Each character is passed by
 address to ’f’ to be modified if necessary.*/
-#include "libft.h"
+#include "../includes/libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

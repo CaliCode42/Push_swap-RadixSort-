@@ -4,7 +4,7 @@ NAME = libft.a
 SRC_DIR = src
 B_DIR = bonus_src
 FT_PRINTF_DIR = ft_printf/src
-INCLUDES = includes ft_printf/includes
+INCLUDES = includes ../includes/ft_printf.h
 
 #Sources
 SRC_FILES = \
@@ -83,7 +83,8 @@ B_OBJ_FILES = $(B_SRC:.c=.o)
 
 #Compilation
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror $(foreach dir,$(INCLUDES),-I$(dir))
+CFLAGS = -Wall -Wextra -Werror
+#$(foreach dir,$(INCLUDES),-I$(dir))
 
 #Rules
 all: $(NAME)

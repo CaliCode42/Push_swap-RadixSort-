@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/12 14:43:39 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/24 14:20:31 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/26 00:03:49 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ static void	push_first_node(t_list **src, t_list **dst, char src_stack)
 
 //Take the first element at the top of b and put it at the top of a.
 //Do nothing if b is empty.
-void	push_b(t_list **src, t_list **dst)
+void	push_a(t_list **src, t_list **dst)
 {
 	if (!src || !*src)
 		return ;
@@ -66,7 +66,7 @@ void	push_b(t_list **src, t_list **dst)
 
 //Take the first element at the top of a and put it at the top of b.
 //Do nothing if a is empty.
-void	push_a(t_list **src, t_list **dst)
+void	push_b(t_list **src, t_list **dst)
 {
 	if (!src || !*src)
 		return ;

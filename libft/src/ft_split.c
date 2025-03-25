@@ -6,13 +6,13 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/15 16:45:05 by tcali             #+#    #+#             */
-/*   Updated: 2024/11/28 13:48:26 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:38:44 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	count_words(char const *s, char const c)
 {

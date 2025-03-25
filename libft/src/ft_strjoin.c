@@ -6,12 +6,12 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/13 17:49:59 by tcali             #+#    #+#             */
-/*   Updated: 2024/11/19 20:35:04 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:39:07 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

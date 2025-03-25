@@ -6,11 +6,11 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 18:22:15 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/07 14:14:25 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:36:53 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(t_content))
 {

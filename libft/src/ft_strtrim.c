@@ -6,13 +6,13 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/14 15:19:50 by tcali             #+#    #+#             */
-/*   Updated: 2024/11/25 09:26:58 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 23:39:40 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdlib.h>
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	found_set(const char *s, int c)
 {

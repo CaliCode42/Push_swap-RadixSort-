@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 16:59:40 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/24 17:16:36 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/25 14:18:46 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,6 @@ int	main(int ac, char **av)
 	while (stack[i])
 		free(stack[i++]);
 	free(stack);
-	ft_testing(&a);
-	//ft_sort_stack(&a);
+	ft_sort_stack(&a);
 	return (0);
 }

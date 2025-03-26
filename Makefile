@@ -16,6 +16,8 @@ SRC_FILES = \
 	$(SRC_DIR)/identify_order.c \
 	$(SRC_DIR)/find_max_bits.c \
 	$(SRC_DIR)/test.c \
+	$(SRC_DIR)/ft_free_list.c \
+	$(SRC_DIR)/free_stack.c \
 	$(OPS_DIR)/swap.c \
 	$(OPS_DIR)/push.c \
 	$(OPS_DIR)/rotate.c \
@@ -33,7 +35,7 @@ OBJ_FILES = $(SRC_FILES:.c=.o)
 #B_OBJ_FILES = >>to complete
 
 #Compilation
-CC = gcc
+CC = gcc -g
 CFLAGS = -Wall -Wextra -Werror -I$(INCLUDES) -I$(LIBFT_DIR)
 
 #Library

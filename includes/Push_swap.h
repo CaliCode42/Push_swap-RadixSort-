@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 12:36:51 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/26 16:31:03 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/26 19:04:33 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ void	ft_sort_stack(t_list **a);
 int		get_stack_size(char **stack);
 void	identify_order(t_list **list);
 int		find_max_bits(t_list *list);
+void	ft_free_list(t_list **list);
+void	free_stack(char **stack);
 //Read from standard input
 void	split_to_nodes(t_list **list, char **stack);
 char	*stdin_to_str(int arg_nb, char **args);

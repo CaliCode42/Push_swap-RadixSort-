@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/13 18:38:46 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/26 00:12:41 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/26 18:50:28 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,8 +102,6 @@ void	mini_sort(t_list **src, t_list **dst)
 {
 	int	list_size;
 
-	//printf("mini_sort\n");
-	//printf("current stack : %c\n", (*src)->stack);
 	list_size = ft_lstsize(*src);
 	if (list_size < 2)
 		return ;

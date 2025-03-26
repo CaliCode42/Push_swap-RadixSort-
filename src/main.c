@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 16:59:40 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/26 18:45:48 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/26 19:03:38 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,6 @@ void	init_list(t_list *list, char c)
 	list->content.index = 0;
 	list->next = NULL;
 	list->prev = NULL;
-	printf("init went good\n");
 }
 
 //fct to sort stack a.
@@ -80,22 +79,22 @@ int	main(int ac, char **av)
 {
 	t_list	*a;
 	char	**stack;
-	int		i;
 	int		stack_size;
 
 	stack = parse_input(ac, av);
 	if (stack == NULL)
 		return (ft_printf("Error\n"), 1);
 	stack_size = get_stack_size(stack);
-	if (!stack || check_stack_errors(stack, stack_size) == 0)
+	if (check_stack_errors(stack, stack_size) == 0)
+	{
+		free_stack(stack);
 		return (ft_printf("Error\n"), 1);
+	}
 	a = NULL;
-	i = 0;
 	split_to_nodes(&a, stack);
 	identify_order(&a);
-	while (stack[i])
-		free(stack[i++]);
-	free(stack);
+	free_stack(stack);
 	ft_sort_stack(&a);
+	ft_free_list(&a);
 	return (0);
 }

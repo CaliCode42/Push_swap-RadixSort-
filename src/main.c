@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 16:59:40 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/26 00:01:30 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/26 18:45:48 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,20 +74,6 @@ void	ft_sort_stack(t_list **a)
 		else
 			radix_sort(a, &b);
 	}
-	if (is_sorted(*a) && !b)
-	{
-		//printf("stack a IS sorted.\n");
-		//printf("stack a\n");
-		//print_nodes_linkedlst(*a);
-		//printf("stack b\n");
-		//print_nodes_linkedlst(b);
-		return ;
-	}
-	//printf("SORTING DID NOT WORK.\n");
-	//printf("stack a\n");
-	//print_nodes_linkedlst(*a);
-	//printf("stack b\n");
-	//print_nodes_linkedlst(b);
 }
 
 int	main(int ac, char **av)

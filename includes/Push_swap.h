@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/20 12:36:51 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/25 23:58:29 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/26 16:31:03 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,6 +59,7 @@ void	sort_three(t_list **list);
 void	sort_four(t_list **a, t_list **b);
 void	sort_five(t_list **a, t_list **b);
 void	radix_sort(t_list **a, t_list **b);
+void	sort_500(t_list **a, t_list **b);
 
 //Testers
 void	print_nodes_linkedlst(t_list *head);

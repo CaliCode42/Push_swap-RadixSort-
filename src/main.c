@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 16:59:40 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/26 19:03:38 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/27 10:06:22 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,18 +44,6 @@ char	**parse_input(int ac, char **av)
 		stack = ft_split(input, ' ');
 	}
 	return (stack);
-}
-
-//fct to initialize a list to NULL.
-void	init_list(t_list *list, char c)
-{
-	if (!list)
-		return ;
-	list->stack = c;
-	list->content.nb = 0;
-	list->content.index = 0;
-	list->next = NULL;
-	list->prev = NULL;
 }
 
 //fct to sort stack a.

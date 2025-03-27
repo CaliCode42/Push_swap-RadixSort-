@@ -4,34 +4,45 @@ NAME = push_swap
 SRC_DIR = src
 OPS_DIR = operations
 SORT_DIR = sorting
+OBJ_DIR = objects
 LIBFT_DIR = libft
 INCLUDES = includes
 
 #Source files
-SRC_FILES = \
-	$(SRC_DIR)/errors.c \
-	$(SRC_DIR)/main.c \
-	$(SRC_DIR)/nodes_management.c \
-	$(SRC_DIR)/stdin_to_str.c \
-	$(SRC_DIR)/identify_order.c \
-	$(SRC_DIR)/find_max_bits.c \
-	$(SRC_DIR)/test.c \
-	$(SRC_DIR)/ft_free_list.c \
-	$(SRC_DIR)/free_stack.c \
-	$(OPS_DIR)/swap.c \
-	$(OPS_DIR)/push.c \
-	$(OPS_DIR)/rotate.c \
-	$(OPS_DIR)/reverse_rotate.c \
-	$(SORT_DIR)/is_sorted.c \
-	$(SORT_DIR)/find_min_lst.c \
-	$(SORT_DIR)/find_max_lst.c \
-	$(SORT_DIR)/mini_sort.c \
-	$(SORT_DIR)/radix_sort.c \
+SRC_FILES := \
+	errors.c \
+	main.c \
+	create_add_node.c \
+	split_to_nodes.c \
+	stdin_to_str.c \
+	find_max_bits.c \
+	ft_free_list.c \
+	free_stack.c \
+	
+OPS_FILES := \
+	push.c \
+	rotate.c \
+	reverse_rotate.c \
+	swap.c \
+
+SORT_FILES := \
+	is_sorted.c \
+	find_min_lst.c \
+	find_max_lst.c \
+	identify_order.c \
+	mini_sort.c \
+	radix_sort.c \
 
 #B_SOURCES = \ >>to complete
 
+#Path for sources
+VPATH = $(SRC_DIR) $(OPS_DIR) $(SORT_DIR)
+
 #Objects
-OBJ_FILES = $(SRC_FILES:.c=.o)
+OBJ_FILES := $(addprefix $(OBJ_DIR)/, $(SRC_FILES:.c=.o)) \
+			 $(addprefix $(OBJ_DIR)/, $(OPS_FILES:.c=.o)) \
+			 $(addprefix $(OBJ_DIR)/, $(SORT_FILES:.c=.o))
+
 #B_OBJ_FILES = >>to complete
 
 #Compilation
@@ -41,22 +52,33 @@ CFLAGS = -Wall -Wextra -Werror -I$(INCLUDES) -I$(LIBFT_DIR)
 #Library
 LIBFT = $(LIBFT_DIR)/libft.a
 
+#Objects directory
+OBJDIRS := $(sort $(dir $(OBJ_FILES)))
+
 #Rules
 all: $(LIBFT) $(NAME)
 
 $(LIBFT):
-	make -C $(LIBFT_DIR) fclean
 	make -C $(LIBFT_DIR) bonus
+
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.c | $(OBJDIRS)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJ_DIR)/%.o: $(OPS_DIR)/%.c | $(OBJDIRS)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJ_DIR)/%.o: $(SORT_DIR)/%.c | $(OBJDIRS)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OBJDIRS):
+	mkdir -p $@
 
 $(NAME): $(OBJ_FILES) $(LIBFT)
 	$(CC) $(CFLAGS) $(OBJ_FILES) -L$(LIBFT_DIR) -lft -o $(NAME) 
 
-%.o: %.c
-	$(CC) -c $(CFLAGS) $< -o $@
-
 clean:
 	make clean -C $(LIBFT_DIR)
-	rm -f $(OBJ_FILES)
+	rm -f $(OBJ_DIR)/*.o
 
 fclean: clean
 	make fclean -C $(LIBFT_DIR)

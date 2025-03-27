@@ -6,7 +6,7 @@
 /*   By: tcali <tcali@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/11 16:59:40 by tcali             #+#    #+#             */
-/*   Updated: 2025/03/27 10:06:22 by tcali            ###   ########.fr       */
+/*   Updated: 2025/03/27 11:32:43 by tcali            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,7 @@ char	**parse_input(int ac, char **av)
 	{
 		input = stdin_to_str(ac, av);
 		stack = ft_split(input, ' ');
+		free(input);
 	}
 	return (stack);
 }
